@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: rgb(30, 17, 36);
+    color: #e9e5ea;
+}
+.container {
+    padding: 2rem 10rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.logo{
+    font-size: 2rem;
+}
+
+a{text-decoration: none; color: #fff;}
+
+nav ul {
+    display: flex;
+}
+ul li {
+    font-size: 1.6rem;
+    list-style: none;
+    padding-left: 10px;
+}
+.cta,
+.hero__cta 
+{
+    padding: 12px 25px;
+    background: purple;
+    border-radius: 5px;
+}
+
+/* Hero styles*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__title {
+    font-size: 12rem;
+    max-width: 50rem;
+    position: relative;
+}
+.hero__title::before{
+    position: absolute;
+    transform: translate(-103px, -199px);
+    content: 'Invade';
+    font-size: 30rem;
+    z-index: -1;
+    opacity: .1;
+}
+.hero__cta {
+    font-size: 2rem;
+    
+}
+.hero img {
+    /* max-width: 50rem; */
+    width: 100%;
+    border-radius: 5px;
+}
+/* .hero__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+} */
